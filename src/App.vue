@@ -1,26 +1,49 @@
+<!-- App.vue -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <NavMenu :activeItem="activeItem" @menuClick="handleMenuClick" />
+    <div v-if="activeItem === 'home'">
+      <HomePage />
+    </div>
+
+    <div v-if="activeItem === 'about'">
+      <AboutPage />
+    </div>
+
+    <div v-if="activeItem === 'todoList'">
+      <TodoList />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavMenu from "./components/NavMenu/NavMenu.vue";
+import HomePage from "./components/HomePage/HomePage.vue";
+import AboutPage from "./components/AboutPage/AboutPage.vue";
+import TodoList from "./components/TodoList/TodoList.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    NavMenu,
+    HomePage,
+    AboutPage,
+    TodoList,
+  },
+  data() {
+    return {
+      activeItem: "home",
+    };
+  },
+  methods: {
+    handleMenuClick(item) {
+      this.activeItem = item;
+    },
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
+<style lang="scss">
+@import "@/styles/main.scss";
 </style>

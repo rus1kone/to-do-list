@@ -1,0 +1,30 @@
+body{
+  font-family: sans-serif;
+}
+
+.menu {
+  background-color: #333;
+  padding: 20px;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// reset.scss
+
+/* Обнуление отступов и отступов */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* Улучшенная семантика для старых браузеров */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Убираем стандартные стили для списков */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Убираем стандартное оформление ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Убираем стандартное оформление текста, сохраняя наследование свойств */
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+mark {
+  background: none;
+  color: inherit;
+}
+
+/* Корректировка границ элементов таблицы */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Обнуляем отступы для группировки элементов */
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* Убираем дополнительные узлы для IE */
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  vertical-align: middle;
+  background: none;
+  border: 0;
+  padding: 0;
+  line-height: normal;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Убираем стандартные отступы для кнопок */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/* Убираем стандартное оформление для текстовых полей */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Убираем стандартное оформление для полосы прокрутки вебкит-браузеров */
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.5em;
+}
+
+/* Дополнительные стили и корректировки... */
